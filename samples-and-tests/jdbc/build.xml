@@ -1,0 +1,67 @@
+<project name="jdbc" default="packaging">
+    <description>
+        Create a Java Project (JAR) with Ant build script
+    </description>
+
+    <property name="play.home" value="/Users/development/Lkpp/GITLAB/play"/>
+    <property file="conf/application.conf" />
+    <property name="app.path" value="." />
+    <property name="target.dir" value="target"/>
+    <property name="filesExclude" value="**/*.svn modules/* logs/** eclipse/** test/** data/** .settings/** test-result/**
+		tmp/** /.classpath/** /.project/** **/build.xml **/command.* *.log *.txt *.yml  spse4.bat app/** src/**
+		public/images/imgng/mm* /testrunner/** /console/** **/.idea .build/**  **/*.java **/*.py*   documentation/** README.md" />
+
+    <target name="templateDist" description="generate the distribution">
+        <!-- Put everything in ${build} into the MyApplication-${version}.${build.number}.jar -->
+        <delete file="${app.path}/play-templates.jar" />
+        <jar destfile="${app.path}/play-templates.jar">
+            <fileset dir="${app.path}" includes="conf/** app/views/**"/>
+            <fileset dir="${app.path}/precompiled/java" />
+        </jar>
+    </target>
+
+    <target name="precompiled-jar" description="generate the distribution">
+        <!-- Put everything in ${build} into the MyApplication-${version}.${build.number}.jar -->
+        <jar destfile="${app.path}/${application.name}.jar">
+            <fileset dir="${app.path}" includes="conf/routes"/>
+            <fileset dir="${app.path}/app" includes="**/*.html"/>
+            <fileset dir="precompiled/java" includes="**/*.class" />
+        </jar>
+    </target>
+
+    <target name="packaging" depends="templateDist">
+        <delete dir="${target.dir}" />
+        <copy todir="${target.dir}/framework/lib">
+            <fileset dir="${play.home}/framework/lib" includes="*.jar" />
+        </copy>
+        <copy file="${play.home}/framework/play-lkpp.jar" tofile="${target.dir}/framework/play-lkpp.jar" />
+        <move file="play-templates.jar" tofile="${target.dir}/framework/lib/play-templates.jar" />
+        <copy todir="${target.dir}" includeemptydirs="false" >
+            <fileset dir="${app.path}" includes="conf/** public/**" excludes="filesExclude"/>
+<!--            <fileset dir="${app.path}" includes="app/views/**"/>-->
+        </copy>
+        <!-- generate checksum -->
+<!--        <java classname="play.utils.Checksum">-->
+<!--            <arg value="&#45;&#45;generate" /><ar></ar>-->
+<!--            <arg value="${target.dir}" />-->
+<!--            <arg value="${target.dir}/webapp" />-->
+<!--            <classpath>-->
+<!--                <pathelement path="${play.home}/framework/tools/play-checksum.jar"/>-->
+<!--            </classpath>-->
+<!--        </java>-->
+
+        <!-- integrity checking -->
+<!--        <java classname="play.utils.Checksum">-->
+<!--            <arg value="&#45;&#45;check" />-->
+<!--            <arg value="${target.dir}" />-->
+<!--            <arg value="${target.dir}/webapp" />-->
+<!--            <classpath>-->
+<!--                <pathelement path="${play.home}/framework/tools/play-checksum.jar"/>-->
+<!--            </classpath>-->
+<!--        </java>-->
+
+        <!-- make play-check.jar -->
+<!--        <jar destfile="${target.dir}/framework/lib/play-check.jar" basedir="${target.dir}/webapp/precompiled/java" includes="**/*.class" />-->
+<!--        <delete dir="${target.dir}/webapp/precompiled" />-->
+    </target>
+</project>

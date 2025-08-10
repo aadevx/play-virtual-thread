@@ -1,0 +1,6 @@
+# You can specialize this file for each language.
+# For example, for French create a messages.fr file
+#
+
+header=THIS is the ORIGINAL header example
+header2= this is an example of a header with param %s

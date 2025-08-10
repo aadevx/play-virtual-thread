@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Form Submit POST</h1>
+<div>
+#{form @Application.file(), enctype :'multipart/form-data'}
+    <input type="file" name="upload.file"/>
+    <input type="text" name="upload.id">
+    <input type="submit">
+#{/form}
+    #{select 'booking', value:2, id:'select1'}
+    #{option 1}One king-size bed#{/option}
+    #{option 2}Two double beds#{/option}
+    #{option 3}Three beds#{/option}
+    #{/select}
+</div>
+<img src="@{'public/images/activation_process_mini.webp'}">
+</body>
+</html>
+

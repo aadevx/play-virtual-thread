@@ -1,0 +1,13 @@
+0:play.plugins.EnhancerPlugin
+1:play.ConfigurationChangeWatcherPlugin
+100:play.data.parsing.TempFilePlugin
+200:play.data.validation.ValidationPlugin
+300:play.db.DBPlugin
+301:play.db.DBBrowserPlugin
+500:play.i18n.MessagesPlugin
+600:play.libs.WS
+700:play.jobs.JobsPlugin
+701:play.plugins.MetricPlugin
+900:play.plugins.SlowActionMonitor
+100000:play.plugins.ConfigurablePluginDisablingPlugin
+100100:play.plugins.PlayStatusPlugin

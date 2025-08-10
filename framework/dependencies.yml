@@ -1,0 +1,114 @@
+# Play
+self: play -> play $version
+
+# Don't follow transitive dependencies for this project
+transitiveDependencies: false
+
+# This core dependencies are required by Play framework
+require: &allDependencies
+  - com.github.ben-manes.caffeine -> caffeine 3.2.0
+  - com.zaxxer -> HikariCP 6.3.0
+  - org.sql2o -> sql2o 1.9.1
+  - com.googlecode.xmemcached -> xmemcached 2.4.8
+  - com.squareup.okhttp3 -> okhttp 4.12.0
+  - org.xhtmlrenderer -> flying-saucer-pdf 9.11.3
+  - com.google.code.gson -> gson 2.12.1
+  - com.jamonapi -> jamon 2.82
+  - redis.clients -> jedis 5.2.0
+  - commons-beanutils 1.10.0
+  - commons-codec 1.18.0
+  - org.apache.commons -> commons-email 1.6.0
+  - commons-fileupload 1.5
+  - commons-io 2.18.0
+  - commons-logging 1.3.4
+  - org.apache.commons -> commons-lang3 3.17.0
+  - org.apache.commons -> commons-collections4 4.4
+  - org.apache.commons -> commons-text 1.13.0
+  - com.fasterxml.jackson.core -> jackson-core 2.18.2
+  - com.fasterxml.jackson.core -> jackson-databind 2.18.2
+  - com.fasterxml.jackson.core -> jackson-annotations 2.18.2
+  - com.h2database -> h2 2.3.232
+  - com.sun.mail -> javax.mail 1.6.2
+  - javax.inject 1.0
+  - javax.validation -> validation-api 2.0.1.Final
+  - joda-time 2.13.0
+  - org.hamcrest -> hamcrest-all 1.3
+  - junit 4.13.2
+  - org.apache.logging.log4j -> log4j-core 2.24.3
+  - org.apache.logging.log4j -> log4j-api 2.24.3
+  - org.slf4j -> slf4j-api 2.0.17
+  - net.sf.oval -> oval 1.90
+  - org.mariadb.jdbc -> mariadb-java-client 3.5.3
+  - org.apache.ivy -> ivy 2.5.3
+  - org.codehaus.groovy -> groovy 4.0.25
+  - org.codehaus.groovy -> groovy-xml 4.0.25
+  - org.eclipse.jdt -> ecj 3.41.0
+  - org.hibernate.javax.persistence -> hibernate-jpa-2.1-api 1.0.2.Final
+  - org.javassist -> javassist 3.30.2-GA
+  - io.netty -> netty-handler 4.2.0.Final
+  - io.netty -> netty-codec 4.2.0.Final
+  - io.netty -> netty-codec-http 4.2.0.Final
+  - io.netty -> netty-codec-http2 4.2.0.Final
+  - io.netty -> netty-buffer 4.2.0.Final
+  - io.netty -> netty-common 4.2.0.Final
+  - io.netty -> netty-transport 4.2.0.Final
+  - io.netty -> netty-resolver 4.2.0.Final
+  - org.postgresql -> postgresql 42.7.5
+  - org.yaml -> snakeyaml 2.4
+  - com.auth0 -> java-jwt 4.5.0
+  - io.prometheus -> simpleclient 0.16.0
+  - gg.jte -> jte 3.2.0
+  - org.bouncycastle -> bcprov-jdk18on 1.80
+  - com.googlecode.owasp-java-html-sanitizer -> owasp-java-html-sanitizer 20240325.1
+  - org.jsoup -> jsoup 1.19.1
+
+# Default repositories, used for all projects
+repositories:
+  - playCore:
+      type: local
+      descriptor: "${play.path}/framework/dependencies.yml"
+      artifact: "${play.path}/framework/play-[revision].jar"
+      contains:
+        - play -> play
+
+  - playCoreDependencies:
+      type: local
+      artifact: "${play.path}/framework/lib/[artifact]-[revision].jar"
+      contains: *allDependencies
+
+  - playCoreCrud:
+      type: local
+      artifact: "${play.path}/modules/crud"
+      contains:
+        - play -> crud $versionlog
+
+  - playCoreSecure:
+      type: local
+      artifact: "${play.path}/modules/secure"
+      contains:
+        - play -> secure $version
+
+  - playCoreDocviewer:
+      type: local
+      artifact: "${play.path}/modules/docviewer"
+      contains:
+        - play -> docviewer $version
+
+  - playModules:
+      type: chain
+      using:
+        - playLocalModules:
+            type: local
+            descriptor: "${play.path}/modules/[module]-[revision]/conf/dependencies.yml"
+            artifact: "${play.path}/modules/[module]-[revision]"
+
+        - playContributedModules:
+            type: http
+            descriptor: "https://www.playframework.com/modules/repo/[module]/[revision]/dependencies.yml"
+            artifact: "https://www.playframework.com/modules/[module]-[revision].zip"
+
+      contains:
+        - play -> *
+
+  - mavenCentral:
+      type: iBiblio

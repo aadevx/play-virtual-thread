@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f96b87ff-886f-44fc-aca2-c86fad946ea9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../jdbc/conf/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc/conf/application.conf" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="110lbpq8" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2bZmMKWplsdf0aX9CEwf8uVH1nf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Remote JVM Debug.chat.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;play-virtual-thread&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ariefardiyansah/Lkpp/GOVTECH/play/samples-and-tests/chat/chat.ipr&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="chat" type="Remote">
+      <module name="chat" />
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="8000" />
+      <option name="AUTO_RESTART" value="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="8000" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f96b87ff-886f-44fc-aca2-c86fad946ea9" name="Changes" comment="" />
+      <created>1706430925912</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706430925912</updated>
+      <workItem from="1706430926926" duration="1130000" />
+      <workItem from="1706440273832" duration="63000" />
+      <workItem from="1706440540019" duration="108000" />
+      <workItem from="1706440748891" duration="1245000" />
+      <workItem from="1706453199039" duration="137000" />
+      <workItem from="1706453899411" duration="2214000" />
+      <workItem from="1706457224847" duration="308000" />
+      <workItem from="1706458320442" duration="1220000" />
+      <workItem from="1706459616703" duration="1369000" />
+      <workItem from="1706480078618" duration="74000" />
+      <workItem from="1706480180833" duration="259000" />
+      <workItem from="1706480527320" duration="152000" />
+      <workItem from="1706480988220" duration="378000" />
+      <workItem from="1706483856540" duration="53000" />
+      <workItem from="1706483958388" duration="1623000" />
+      <workItem from="1706516014584" duration="1474000" />
+      <workItem from="1706525462517" duration="595000" />
+      <workItem from="1706526181929" duration="758000" />
+      <workItem from="1706541131384" duration="110000" />
+      <workItem from="1706542743783" duration="2538000" />
+      <workItem from="1706546061420" duration="146000" />
+      <workItem from="1706546284098" duration="104000" />
+      <workItem from="1706546414252" duration="466000" />
+      <workItem from="1706565667843" duration="225000" />
+      <workItem from="1706566594161" duration="463000" />
+      <workItem from="1706567991427" duration="58000" />
+      <workItem from="1706666346961" duration="1742000" />
+      <workItem from="1706671110914" duration="1167000" />
+      <workItem from="1706674834281" duration="350000" />
+      <workItem from="1706675274608" duration="197000" />
+      <workItem from="1706675774445" duration="630000" />
+      <workItem from="1706681453096" duration="1306000" />
+      <workItem from="1706684896291" duration="496000" />
+      <workItem from="1706685597070" duration="276000" />
+      <workItem from="1706687525349" duration="1634000" />
+      <workItem from="1706751994878" duration="1272000" />
+      <workItem from="1706801437234" duration="3923000" />
+      <workItem from="1706837404280" duration="1827000" />
+      <workItem from="1706904064973" duration="937000" />
+      <workItem from="1706905058286" duration="3195000" />
+      <workItem from="1706944272318" duration="45000" />
+      <workItem from="1706944334071" duration="925000" />
+      <workItem from="1706975623632" duration="5838000" />
+      <workItem from="1707022486555" duration="137000" />
+      <workItem from="1707022669331" duration="112000" />
+      <workItem from="1707022818634" duration="49000" />
+      <workItem from="1707023022351" duration="188000" />
+      <workItem from="1707025253043" duration="119000" />
+      <workItem from="1707193133948" duration="89000" />
+      <workItem from="1720531979214" duration="298000" />
+      <workItem from="1720536795465" duration="1795000" />
+      <workItem from="1720562966469" duration="407000" />
+      <workItem from="1720565612172" duration="579000" />
+      <workItem from="1720566258015" duration="544000" />
+      <workItem from="1720630064305" duration="1092000" />
+      <workItem from="1720936279460" duration="97000" />
+      <workItem from="1720946017730" duration="231000" />
+      <workItem from="1721170858697" duration="47000" />
+      <workItem from="1721170912293" duration="93000" />
+      <workItem from="1721882937087" duration="761000" />
+      <workItem from="1721883840540" duration="221000" />
+      <workItem from="1721898024656" duration="76000" />
+      <workItem from="1721900833733" duration="137000" />
+      <workItem from="1721902143411" duration="5000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../../framework/src/play/Invocation.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../../framework/src/play/Invoker.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
