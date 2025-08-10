@@ -45,14 +45,14 @@ require: &allDependencies
   - org.eclipse.jdt -> ecj 3.41.0
   - org.hibernate.javax.persistence -> hibernate-jpa-2.1-api 1.0.2.Final
   - org.javassist -> javassist 3.30.2-GA
-  - io.netty -> netty-handler 4.2.0.Final
-  - io.netty -> netty-codec 4.2.0.Final
-  - io.netty -> netty-codec-http 4.2.0.Final
-  - io.netty -> netty-codec-http2 4.2.0.Final
-  - io.netty -> netty-buffer 4.2.0.Final
-  - io.netty -> netty-common 4.2.0.Final
-  - io.netty -> netty-transport 4.2.0.Final
-  - io.netty -> netty-resolver 4.2.0.Final
+  - io.netty -> netty-handler 4.2.3.Final
+  - io.netty -> netty-codec 4.2.3.Final
+  - io.netty -> netty-codec-http 4.2.3.Final
+  - io.netty -> netty-codec-http2 4.2.3.Final
+  - io.netty -> netty-buffer 4.2.3.Final
+  - io.netty -> netty-common 4.2.3.Final
+  - io.netty -> netty-transport 4.2.3.Final
+  - io.netty -> netty-resolver 4.2.3.Final
   - org.postgresql -> postgresql 42.7.5
   - org.yaml -> snakeyaml 2.4
   - com.auth0 -> java-jwt 4.5.0
